@@ -1,4 +1,4 @@
-var million_dollar_FAKEMODE = true;
+var million_dollar_FAKEMODE = false;
 var million_dollar_timer;
 var million_dollar_counter = 0;
 
@@ -33,7 +33,7 @@ var million_dollar_object = (function() {
                 million_dollar_counter = 0;
                 million_dollar_timer = window.setInterval(million_dollar_fake, 100);
             } else {
-                for (var million_dollar_i=0; million_dollar_i<pixels.length; million_dollar_i++) {
+                for (var million_dollar_i=0; million_dollar_i < million_dollar_pixels.length; million_dollar_i++) {
                     (function() {
                         var million_dollar_pixel = million_dollar_pixels[million_dollar_i];
                         var million_dollar_rect = million_dollar_pixel[0].split(',');
